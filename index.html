@@ -80,16 +80,7 @@
                 <i class="bi bi-circle"></i><span>Chart.js</span>
               </a>
             </li>
-            <li>
-              <a href="charts-apexcharts.html">
-                <i class="bi bi-circle"></i><span>ApexCharts</span>
-              </a>
-            </li>
-            <li>
-              <a href="charts-echarts.html">
-                <i class="bi bi-circle"></i><span>ECharts</span>
-              </a>
-            </li>
+
           </ul>
         </li><!-- End Charts Nav -->
 
@@ -475,13 +466,13 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Sales',
-                          data: [31, 40, 28, 51, 42, 82, 56],
+                          name: 'temperatura',
+                          data: [31, 40, 28, 31, 42, 22, 26],
                         }, {
                           name: 'Revenue',
                           data: [11, 32, 45, 32, 34, 52, 41]
                         }, { 
-                          name: 'Customers',
+                          name: 'Data',
                           data: [15, 11, 32, 18, 9, 24, 11]
                         }],
                         chart: {
@@ -548,52 +539,46 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Ranking <span>| Today</span></h5>
+                  <h5 class="card-title">Top Data <span>| Today</span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
+                        <th scope="col">#ID-Data</th>
+                        <th scope="col">Name-Satelite</th>
+                        <th scope="col">Temperatura</th>
                         <th scope="col">Status</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
+                        <td>Satelite 2</td>
+                        <td>20°C</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2147</a></th>
-                        <td>Bridie Kessler</td>
-                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
+                        <td>Cubemini</td>
+                        <td>26°C</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2049</a></th>
-                        <td>Ashleigh Langosh</td>
-                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
+                        <td>Satelite4</td>
+                        <td>18 °C</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
+                        <td>Servo Satelite</td>
+                        <td> 32 °C</td>
                         <td><span class="badge bg-danger">Rejected</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
+                        <td>Satelite 1</td>
+                        <td>21°C</td>
                         <td><span class="badge bg-success">Approved</span></td>
                       </tr>
                     </tbody>
@@ -750,7 +735,7 @@
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
+              <h5 class="card-title">Gráfico Comparativo <span>| This Month</span></h5>
 
               <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
 
@@ -767,23 +752,23 @@
                           max: 6500
                         },
                         {
-                          name: 'Administration',
+                          name: 'volt max',
                           max: 16000
                         },
                         {
-                          name: 'Information Technology',
+                          name: 'Volt min',
                           max: 30000
                         },
                         {
-                          name: 'Customer Support',
+                          name: 'Energy',	
                           max: 38000
                         },
                         {
-                          name: 'Development',
+                          name: 'Sample time',
                           max: 52000
                         },
                         {
-                          name: 'Marketing',
+                          name: 'Temperatura ',
                           max: 25000
                         }
                       ]
